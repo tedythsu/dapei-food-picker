@@ -2,11 +2,15 @@
     <h1 class="container__title">大裴吃什麼</h1>
     <img class="container__fade-image" src="assets/images/what-to-eat-2.png" width="100%">
     <div *ngIf="showResult">
-        <img src="assets/images/discussing.gif" width="100%">
-        <img src="assets/images/down-arrow.gif" width="30%">
+        <p class="want-to-order">今天我想來點...</p>
         <p class="food-name">{{ foodName }}</p>
+        <img src="assets/images/rate.gif" width="50%">
         <button class="button-54" role="button" (click)="reDraw()">
             重抽一次
         </button>
     </div>
+    <footer class="footer">
+        <p>Made by Ted Hsu</p>
+        <p>圖片創作者: <a href="https://store.line.me/stickershop/author/97014/zh-Hant" target="_blank">刷子</a></p>
+    </footer>
 </div>
